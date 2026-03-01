@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文创周边</title>
+    <link rel="stylesheet" href="../css/wenchuang.css">
+    <link rel="icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../icon/download/iconfont.css">
+</head>
+
+<body>
+    </div>
+    <div class="add-top-btn" onclick="BackToTop()">
+        <img src="../images/totop.png" alt="icon">
+        <div>顶部</div>
+    </div>
+    <script>
+        function PrintTopBtn() {
+            let top_btn = `
+    <link rel="stylesheet" href="../css/top-btn.css">
+    <div class="add-top-btn" onclick="BackToTop()">
+        <img src="../icons/totop.png" alt="icon">
+        <div>顶部</div>
+    </div>
+  `;
+            document.body.innerHTML = top_btn + document.body.innerHTML;
+        }
+        function BackToTop() {
+            let c = document.documentElement.scrollTop || document.body.scrollTop;
+            if (c > 1) {
+                window.requestAnimationFrame(BackToTop);
+                window.scrollTo(0, c - c / 8);
+            } else {
+                window.scrollTo(0, 0);
+            }
+        }
+    </script>
+    <div class="banner">
+        <div class="banner-nav">
+            <ul class="container-nav" id="container">
+                <li class="logo"><a href="index.html"><img src="../images/logo浮雕.png" alt="纸鸢"></a></li>
+                <li class="nav">
+                    <a href="development.html">历史渊源</a>
+                    <ul class="droplist">
+                        <li class="second"><a href="development.html#develop" target="_blank">发展历程</a></li>
+                        <li class="second"><a href="development.html#book" target="_blank">历史文献</a></li>
+                        <li class="second"><a href="development.html#legend" target="_blank">文化传说</a></li>
+                    </ul>
+                </li>
+                <li class="nav">
+                    <a href="region.html">地域流派</a>
+                    <ul class="droplist">
+                        <li class="second"><a href="region.html#r" target="_blank">地域派系</a></li>
+                        <li class="second"><a href="region.html#sect" target="_blank">技艺派系</a></li>
+                    </ul>
+                </li>
+                <li class="nav">
+                    <a href="making.html">制作工艺</a>
+                    <ul class="droplist">
+                        <li class="second"><a href="making.html#make" target="_blank">纸鸢制作</a></li>
+                        <li class="second"><a href="making.html#solt" target="_blank">纸鸢种类</a></li>
+                        <li class="second"><a href="making.html#attention" target="_blank">注意事项</a></li>
+                    </ul>
+                </li>
+                <li class="nav">
+                    <a href="inherit.html">文化传承</a>
+                    <ul class="droplist">
+                        <li class="second"><a href="inherit.html#holiday" target="_blank">节日传承</a></li>
+                        <li class="second"><a href="inherit.html#person" target="_blank">传承名家</a></li>
+                        <li class="second"><a href="inherit.html#good" target="_blank">文创周边</a></li>
+                    </ul>
+                </li>
+                <li class="seach"><input type="search" size="60px"></li>
+                <li class="land"><a href="login.html" target="_blank"><span class="iconfont">&#xe6a3</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 路径 -->
+    <div class="x-wrap container">
+        <div class="bread-item1"><a href="index.html">首页</a></div>
+        <div class="jiantou"><img src="../images/箭头 右.png" alt=""></div>
+        <div class="bread-item2"><a href="inherit.html">文化传承</a> </div>
+        <div class="jiantou"><img src="../images/箭头 右.png" alt=""></div>
+        <div class="bread-item3"><a href="wenchuang.html">文创周边</a> </div>
+    </div>
+    <div class="content">
+        <div class="ban-fluid" id="fluid">
+            <div class="banner"><img src="../images/文创/banner.jpg" alt=""></div>
+            <div class="word">文创周边</div>
+        </div>
+        <div class="zmd container">
+            <ul class="container">
+                <li><img src="../images/a1.jpg" alt="">
+                    <div class="detial">
+                        <div class="buy-left">
+                            <p class="big">纸鸢奖牌</p>
+                            <p class="small">金属材质||运动奖牌</p>
+                        </div>
+                        <div class="buy-right">￥29 <br>
+                            <img src="../images/文创/拼合图形.png" class="buy">
+
+                        </div>
+                    </div>
+                </li>
+                <li><img src="../images/a2.jpg" alt="">
+                    <div class="detial">
+                        <div class="buy-left">
+                            <p class="big">纸鸢发卡</p>
+                            <p class="small">绒花材质||纯手工做</p>
+                        </div>
+                        <div class="buy-right">￥19  <br>                          <img src="../images/文创/拼合图形.png" class="buy">
+                        </div>
+                    </div>
+                </li>
+                <li><img src="../images/a3.jpg" alt="">
+                    <div class="detial">
+                        <div class="buy-left">
+                            <p class="big">纸鸢香囊</p>
+                            <p class="small">古风余韵||便携芬芳</p>
+                        </div>
+                        <div class="buy-right">￥19   <br>                         <img src="../images/文创/拼合图形.png" class="buy">
+                        </div>
+                    </div>
+                </li>
+                <li><img src="../images/a4.jpg" alt="">
+                    <div class="detial">
+                        <div class="buy-left">
+                            <p class="big">纸鸢发簪</p>
+                            <p class="small">纯木主体||优雅大方</p>
+                        </div>
+                        <div class="buy-right">￥39   <br>                         <img src="../images/文创/拼合图形.png" class="buy">
+                        </div>
+                    </div>
+                </li>
+                <li><img src="../images/a5.jpg" alt="">
+                    <div class="detial">
+                        <div class="buy-left">
+                            <p class="big">定制纸鸢</p>
+                            <p class="small">微风易飞||自主订做</p>
+                        </div>
+                        <div class="buy-right">￥59   <br>                         <img src="../images/文创/拼合图形.png" class="buy">
+</div>
+                    </div>
+                </li>
+                <li><img src="../images/a6.jpg" alt="">
+                    <div class="detial">
+                        <div class="buy-left">
+                            <p class="big">纸鸢风铃</p>
+                            <p class="small">铃声清脆||轻巧易携</p>
+                        </div>
+                        <div class="buy-right">￥19  <br>                          <img src="../images/文创/拼合图形.png" class="buy">
+</div>
+                    </div>
+                </li>
+                <li><img src="../images/a7.jpg" alt="">
+                    <div class="detial">
+                        <div class="buy-left">
+                            <p class="big">纸鸢扎染</p>
+                            <p class="small">扎染技术||非遗传承</p>
+                        </div>
+                        <div class="buy-right">￥99  <br>                          <img src="../images/文创/拼合图形.png" class="buy">
+</div>
+                    </div>
+                </li>
+                <li><img src="../images/a8.jpg" alt="">
+                    <div class="detial">
+                        <div class="buy-left">
+                            <p class="big">纸鸢挂包</p>
+                            <p class="small">古风搭配||典雅实用</p>
+                        </div>
+                        <div class="buy-right">￥49   <br>                         <img src="../images/文创/拼合图形.png" class="buy">
+</div>
+                    </div>
+                </li>
+                <li><img src="../images/a9.jpg" alt="">
+                    <div class="detial">
+                        <div class="buy-left">
+                            <p class="big">纸鸢装饰画</p>
+                            <p class="small">可反复使用||不留胶</p>
+                        </div>
+                        <div class="buy-right">￥49  <br>                          <img src="../images/文创/拼合图形.png" class="buy">
+</div>
+                    </div>
+                </li>
+                <li><img src="../images/a1.jpg" alt="">
+                    <div class="detial">
+                        <div class="buy-left">
+                            <p class="big">纸鸢奖牌</p>
+                            <p class="small">金属材质||运动奖牌</p>
+                        </div>
+                        <div class="buy-right">￥29  <br>                          <img src="../images/文创/拼合图形.png" class="buy">
+</div>
+                    </div>
+                </li>
+                <li><img src="../images/a2.jpg" alt="">
+                    <div class="detial">
+                        <div class="buy-left">
+                            <p class="big">纸鸢发卡</p>
+                            <p class="small">绒花材质||纯手工做</p>
+                        </div>
+                        <div class="buy-right">￥19  <br>                         <img src="../images/文创/拼合图形.png" class="buy">
+</div>
+                    </div>
+                </li>
+                <li><img src="../images/a3.jpg" alt="">
+                    <div class="detial">
+                        <div class="buy-left">
+                            <p class="big">纸鸢香囊</p>
+                            <p class="small">古风余韵||便携芬芳</p>
+                        </div>
+                        <div class="buy-right">￥19  <br>                          <img src="../images/文创/拼合图形.png" class="buy">
+</div>
+                    </div>
+                </li>
+                <li><img src="../images/a4.jpg" alt="">
+                    <div class="detial">
+                        <div class="buy-left">
+                            <p class="big">纸鸢发簪</p>
+                            <p class="small">纯木主体||优雅大方</p>
+                        </div>
+                        <div class="buy-right">￥39  <br>                          <img src="../images/文创/拼合图形.png" class="buy">
+</div>
+                    </div>
+                </li>
+                <li><img src="../images/a5.jpg" alt="">
+                    <div class="detial">
+                        <div class="buy-left">
+                            <p class="big">定制纸鸢</p>
+                            <p class="small">微风易飞||自主订做</p>
+                        </div>
+                        <div class="buy-right">￥59     <br>                       <img src="../images/文创/拼合图形.png" class="buy">
+</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="weif container">
+            <div class="tipic">潍坊有礼系列文创</div>
+            <div class="weif-pho">
+                <div class="pho"><img src="../images/文创/11.jpg" alt=""></div>
+                <div class="pho pho2">
+                    <div class="little l2"><img src="../images/文创/矩形 17.png" alt=""></div>
+                    <div class="little l22"><img src="../images/文创/22.jpg" alt=""></div>
+                </div>
+                <div class="pho"><img src="../images/文创/33.jpg" alt=""></div>
+            </div>
+
+        </div>
+        <div class="fine container">
+            <div class="tipic">精品推荐</div>
+            <div class="out-box">
+                <div class="box1">
+                    <li><img src="../images/文创/矩形 19.png" alt="">
+                        <div class="detial">
+                            <div class="buy-left">
+                                <p class="big">精品陈醋</p>
+                                <p class="small">限量联名|风筝缘</p>
+                            </div>
+                            <div class="buy-right">￥699  <br>                              <img src="../images/文创/拼合图形.png" class="buy">
+</div>
+                        </div>
+                    </li>
+                </div>
+                <div class="box2">
+                    <li><img src="../images/文创/b.jpg" alt="">
+                        <div class="detial">
+                            <div class="buy-left">
+                                <p class="big">纸鸢书签</p>
+                                <p class="small">剪纸工艺|书签</p>
+                            </div>
+                            <div class="buy-right">￥29.9  <br>                              <img src="../images/文创/拼合图形.png" class="buy">
+</div>
+                        </div>
+                    </li>
+                </div>
+                <div class="box3">
+                    <li><img src="../images/文创/矩形 21.png" alt="">
+                        <div class="detial">
+                            <div class="buy-left">
+                                <p class="big">纪念纸鸢</p>
+                                <p class="small">自主制作|非遗传承</p>
+                            </div>
+                            <div class="buy-right">￥29.9  <br>                              <img src="../images/文创/拼合图形.png" class="buy">
+</div>
+                        </div>
+                    </li>
+                </div>
+                <div class="box4">
+                    <li><img src="../images/文创/d.jpg.png" alt="">
+                        <div class="detial">
+                            <div class="buy-left">
+                                <p class="big">亚克力纸鸢钥匙扣</p>
+                                <p class="small">鸢飞随行|精巧钥匙扣</p>
+                            </div>
+                            <div class="buy-right">￥19.9  <br>                              <img src="../images/文创/拼合图形.png" class="buy">
+</div>
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gift-making container">
+        <div class="tipic">礼盒定制</div>
+        <div class="up">
+            <div class="pic-left"><img class="scale" src="../images/文创/礼盒0.jpg" alt=""></div>
+            <div class="text-center">
+                <li><img class="none" src="../images/文创/礼盒0.jpg" alt="">
+                    <div class="detial">
+                        <div class="buy-left">
+                            <p class="big">定制礼盒</p>
+                            <p class="small">风格百变|送礼必备</p>
+                        </div>
+                        <div class="buy-right">￥49.9    <br>                        <img src="../images/文创/拼合图形.png" class="buy">
+</div>
+                    </div>
+                </li>
+            </div>
+            <div class="pic-right"><img class="scale" src="../images/文创/礼盒4.jpg" alt=""></div>
+        </div>
+        <div class="bottom">
+            <div class="picbottom"><img class="scale" src="../images/文创/礼盒1.jpg" alt=""></div>
+            <div class="picbottom"><img class="scale" src="../images/文创/礼盒2.jpg" alt=""></div>
+            <div class="picbottom"><img class="scale" src="../images/文创/礼盒3.jpg" alt=""></div>
+            <div class="picbottom"><img class="scale" src="../images/文创/礼盒5.jpg" alt=""></div>
+        </div>
+    </div>
+    <div class="furniture container">
+        <div class="tipic">风筝元素家居设计</div>
+        <div class="fur-out">
+            <div class="fur-box">
+                <li><img src="../images/文创/壁灯.jpg" alt="">
+                    <div class="detial">
+                        <div class="buy-left">
+                            <p class="big">风筝壁灯</p>
+                            <p class="small">氛围感装修|照明装饰</p>
+                        </div>
+                        <div class="buy-right">￥199.9  <br>                          <img src="../images/文创/拼合图形.png" class="buy">
+</div>
+                    </div>
+                </li>
+            </div>
+            <div class="fur-box">
+                <li><img src="../images/文创/壁纸.png" alt="">
+                    <div class="detial">
+                        <div class="buy-left">
+                            <p class="big">风筝壁纸</p>
+                            <p class="small">特色创意|装饰</p>
+                        </div>
+                        <div class="buy-right">￥149.9  <br>                          <img src="../images/文创/拼合图形.png" class="buy">
+</div>
+                    </div>
+                </li>
+            </div>
+            <div class="fur-box">
+                <li><img src="../images/文创/挂灯.jpg" alt="">
+                    <div class="detial">
+                        <div class="buy-left">
+                            <p class="big">风筝挂灯</p>
+                            <p class="small">随风翩跹|装饰</p>
+                        </div>
+                        <div class="buy-right">￥999.9  <br>                          <img src="../images/文创/拼合图形.png" class="buy">
+</div>
+                    </div>
+                </li>
+            </div>
+        </div>
+
+    </div>
+    <div class="content">
+
+        <div class="cart">
+            <img src="../images/文创/购物车.png" class="img">
+            <ul id="cart-items">
+                <!-- 购物车商品列表在这里动态生成 -->
+            </ul>
+            <div class="product-display">
+                <img id="display-image" src="#" alt="">
+                <p id="display-text"></p>
+            </div>
+            <p class="tc" style="color: #fff;">Total: <span id="total-price">0</span>元</p>
+            <div id="jiesuan">立即结算</div>
+        </div>
+    </div>
+    </div>
+    <script>
+        // 监听zmd和fine中的buy按钮点击事件
+        let totalPrice = parseFloat(document.getElementById('total-price').innerText) || 0;
+
+        // 监听zmd和fine中的buy按钮点击事件
+        let buyButtons = document.querySelectorAll('.buy');
+        buyButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                let product = this.closest('li').querySelector('.big').innerText;
+                let price = parseFloat(this.closest('li').querySelector('.buy-right').innerText.substring(1));
+                let imageSrc = this.closest('li').querySelector('img').src;
+
+                let cartItems = document.getElementById('cart-items');
+                let existingItem = Array.from(cartItems.children).find(item => item.innerText.includes(product));
+                if (existingItem) {
+                    let quantityDisplay = existingItem.querySelector('.num');
+                    let currentQuantity = parseInt(quantityDisplay.textContent);
+                    quantityDisplay.textContent = currentQuantity + 1;
+                    totalPrice += price;
+                    document.getElementById('total-price').innerText = totalPrice.toFixed(2);
+                } else {
+                    let item = document.createElement('li');
+                    item.classList.add('item');
+                    item.innerHTML = `
+                   <span>${product} - ￥${price}</span>
+                    <div class="quantity">
+                        <button class="decrease">-</button>
+                        <span class="num">1</span>
+                        <button class="increase">+</button>
+                    </div>
+                `;
+                    cartItems.appendChild(item); // 更新总价
+                    totalPrice += price;
+                    document.getElementById('total-price').innerText = totalPrice.toFixed(2);
+
+                    // 显示商品图片和文字
+                    let productDisplay = document.querySelector('.product-display');
+                    let displayImage = document.getElementById('display-image');
+                    let jiesuan = document.getElementById(`jiesuan`)
+                    let cart = document.querySelector('.cart');
+                    let tc = document.querySelector('.tc')
+                    let displayText = document.getElementById('display-text');
+
+                    displayImage.src = imageSrc;
+                    item.style.margin = `5px 0`;
+                    item.style.border = `1px solid #9E4242`
+                    tc.style.color = `#000`
+
+
+                    // 展开商品展示区域
+                    productDisplay.style.display = 'block';
+                    jiesuan.style.display = 'block';
+                    cart.style.backgroundColor = 'rgba(242, 239, 227, 1)';
+                    cart.style.width = `200px`
+                    displayImage.style.height = `70px`
+
+
+                    // 监听数量增减按钮点击事件
+                    let increaseBtn = item.querySelector('.increase');
+                    let decreaseBtn = item.querySelector('.decrease');
+                    let quantityDisplay = item.querySelector('.num');
+
+                    increaseBtn.addEventListener('click', function () {
+                        let currentQuantity = parseInt(quantityDisplay.textContent);
+                        quantityDisplay.textContent = currentQuantity + 1;
+                        totalPrice += price;
+                        document.getElementById('total-price').innerText = totalPrice.toFixed(2);
+                    });
+
+                    decreaseBtn.addEventListener('click', function () {
+                        let currentQuantity = parseInt(quantityDisplay.textContent);
+                        if (currentQuantity > 0) {
+                            if (currentQuantity === 1) {
+                                // 当商品数量减为0时，从购物车中删除该商品
+                                item.remove();
+                                displayImage.remove();
+                                displayText.remove();
+                                totalPrice -= price;
+                                document.getElementById('total-price').innerText = totalPrice.toFixed(2);
+                            } else {
+                                quantityDisplay.textContent = currentQuantity - 1;
+                                totalPrice -= price;
+                                document.getElementById('total-price').innerText = totalPrice.toFixed(2);
+                            }
+                        }
+                    });
+                };
+            });
+        });
+        let img = document.querySelector('.img').addEventListener('click', function () {
+            productDisplay = document.querySelector('.product-display');
+            jiesuan = document.getElementById(`jiesuan`)
+            let img = document.querySelector('.img')
+            cartItems = document.getElementById('cart-items')
+            cart = document.querySelector('.cart');
+            tc = document.querySelector('.tc')
+
+            if (productDisplay.style.display === 'none') {
+                productDisplay.style.display = 'block';
+                cartItems.style.display = 'block';
+                cart.style.backgroundColor = 'rgba(242, 239, 227, 1)';
+
+                tc.style.color = `#000`
+                cart.style.width = `200px`
+
+            } else {
+                productDisplay.style.display = 'none';
+                cartItems.style.display = 'none';
+                cart.style.backgroundColor = 'rgba(0,0,0,0)';
+                tc.style.color = `#fff`
+                cart.style.width = `80px`
+
+            }
+            if (jiesuan.style.display === 'none') {
+                jiesuan.style.display = 'block';
+            } else {
+                jiesuan.style.display = 'none';
+            }
+        });
+        var jiesuan = document.getElementById(`jiesuan`)
+        jiesuan.addEventListener('click', function () {
+            // 点击时弹出alert
+            alert('结算成功!');
+            let cartItems = document.getElementById('cart-items');
+    let totalPrice = document.getElementById('total-price');
+    
+    cartItems.innerHTML = ''; // 清空购物车列表
+    totalPrice.innerText = '0'; // 重置总价为0
+    
+    // 清空商品展示区域中的商品图片和文字
+    let productDisplay = document.querySelector('.product-display');
+    let displayImage = document.getElementById('display-image');
+    let displayText = document.getElementById('display-text');
+    
+    displayImage.src = ''; // 清空商品图片
+    displayText.innerText = ''; // 清空商品文字
+        });
+    </script>
+    <div class="x-footer">
+        <div class="end container">
+            <ul id="footer">
+                <li>网站地图</li>
+                <li>关于我们</li>
+                <li>联系我们</li>
+                <li>了解更多</li>
+            </ul>
+        </div>
+        <div class="map container">
+            <dl class="first">
+                <dt class="footer-nav"><a href="index.html">首页</a></dt>
+                <dd class="footer-droplist"><a href="index.html#about">关于纸鸢</a></dd>
+                <dd class="footer-droplist"><a href="index.htmla#meaning">纸鸢含义</a></dd>
+                <dd class="footer-droplist"><a href="index.html#zixun">纸鸢资讯</a></dd>
+            </dl>
+            <dl class="second">
+                <dt class="footer-nav"><a href="development.html">历史渊源</a></dt>
+                <dd class="footer-droplist"><a href="development.html#develop">发展历程</a></dd>
+                <dd class="footer-droplist"><a href="development.html#book">历史文献</a></dd>
+                <dd class="footer-droplist"><a href="development.html#legend">文化传说</a></dd>
+            </dl>
+            <dl class="second">
+                <dt class="footer-nav"><a href="region.html">地域流派</a></dt>
+                <dd class="footer-droplist"><a href="region.html#r">地域派系</a></dd>
+                <dd class="footer-droplist"><a href="region.html#sect">技艺派系</a></dd>
+            </dl>
+            <dl class="second">
+                <dt class="footer-nav"><a href="making.html">制作工艺</a></dt>
+                <dd class="footer-droplist"><a href="making.html#make">纸鸢制作</a></dd>
+                <dd class="footer-droplist"><a href="making.html#solt">纸鸢种类</a></dd>
+                <dd class="footer-droplist"><a href="making.html#attention">使用操作</a></dd>
+            </dl>
+            <dl class="second">
+                <dt class="footer-nav"><a href="inherit.html">文化传承</a></dt>
+                <dd class="footer-droplist"><a href="inherit.html#holiday">节日传承</a></dd>
+                <dd class="footer-droplist"><a href="inherit.html#person">传承名家</a></dd>
+                <dd class="footer-droplist"><a href="inherit.html#good">文创周边</a></dd>
+            </dl>
+        </div>
+        <div class="slot">
+            <div class="slot-track">
+                <div class="slot-item s1"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s2"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s3"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s4"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s5"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s6"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s7"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s8"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s9"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s10"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s11"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s12"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s13"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s14"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s15"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s16"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s17"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s18"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s19"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s20"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s21"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s1"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s2"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s3"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s4"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s5"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s6"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s7"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s8"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s9"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s10"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s11"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s12"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s13"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s14"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s15"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s16"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s17"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s18"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s19"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s20"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s21"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s1"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s2"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s3"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s4"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s5"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s6"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s7"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s8"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s9"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s10"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s11"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s12"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s13"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s14"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s15"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s16"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s17"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s18"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s19"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s20"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s21"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s1"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s2"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s3"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s4"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s5"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s6"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s7"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s8"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s9"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s10"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s11"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s12"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s13"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s14"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s15"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s16"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s17"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s18"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s19"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s20"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s21"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const boxes = document.querySelectorAll(".slot-item");
+
+        document.addEventListener("mousemove", (e) => {
+            const mouseX = e.clientX;
+
+            // Reset all boxes height to 50px
+            boxes.forEach((box) => {
+                box.style.height = "70px";
+            });
+
+            // Adjust heights based on mouse position
+            boxes.forEach((box, index) => {
+                const boxRect = box.getBoundingClientRect();
+                const boxCenterX = boxRect.left + boxRect.width / 2;
+
+                if (Math.abs(mouseX - boxCenterX) < boxRect.width / 2) {
+                    box.style.height = "120px";
+                    for (let i = 0; i < 4; i++) {
+                        if (index > i + 1) {
+                            boxes[index - i - 1].style.height = 100 - i * 10 + "px";
+                        }
+                        if (index < boxes.length - (i + 1)) {
+                            boxes[index + i + 1].style.height = 100 - i * 10 + "px";
+                        }
+                    }
+                }
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>地域流派</title>
+    <link rel="icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/region.css">
+    <link rel="stylesheet" href="../icon/download/iconfont.css">
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="add-top-btn" onclick="BackToTop()">
+        <img src="../images/totop.png" alt="icon">
+        <div>顶部</div>
+    </div>
+    <script>
+        function PrintTopBtn() {
+            let top_btn = `
+<link rel="stylesheet" href="../css/top-btn.css">
+<div class="add-top-btn" onclick="BackToTop()">
+    <img src="../icons/totop.png" alt="icon">
+    <div>顶部</div>
+</div>
+`;
+            document.body.innerHTML = top_btn + document.body.innerHTML;
+        }
+        function BackToTop() {
+            let c = document.documentElement.scrollTop || document.body.scrollTop;
+            if (c > 1) {
+                window.requestAnimationFrame(BackToTop);
+                window.scrollTo(0, c - c / 8);
+            } else {
+                window.scrollTo(0, 0);
+            }
+        }
+    </script>
+    <div class="banner">
+        <div class="banner-nav">
+            <ul class="container-nav" id="container">
+                <li class="logo"><a href="shouye.html"><img src="../images/logo.png" alt="纸鸢"></a></li>
+                <li class="nav">
+                    <a href="development.html" target="_blank">历史渊源</a>
+                    <ul class="droplist">
+                        <li class="second"><a href="development.html#develop" target="_blank">发展历程</a></li>
+                        <li class="second"><a href="development.html#book" target="_blank">历史文献</a></li>
+                        <li class="second"><a href="development.html#legend" target="_blank">文化传说</a></li>
+                    </ul>
+                </li>
+                <li class="nav">
+                    <a href="region.html">地域流派</a>
+                    <ul class="droplist">
+                        <li class="second"><a href="region.html#r">地域派系</a></li>
+                        <li class="second"><a href="region.html#sect">技艺派系</a></li>
+                    </ul>
+                </li>
+                <li class="nav">
+                    <a href="making.html" target="_blank">制作工艺</a>
+                    <ul class="droplist">
+                        <li class="second"><a href="making.html#make" target="_blank">纸鸢制作</a></li>
+                        <li class="second"><a href="making.html#solt" target="_blank">纸鸢种类</a></li>
+                        <li class="second"><a href="making.html#attention" target="_blank">注意事项</a></li>
+                    </ul>
+                </li>
+                <li class="nav">
+                    <a href="inherit.html" target="_blank">文化传承</a>
+                    <ul class="droplist">
+                        <li class="second"><a href="inherit.html#holiday" target="_blank">节日传承</a></li>
+                        <li class="second"><a href="inherit.html#person" target="_blank">传承名家</a></li>
+                        <li class="second"><a href="inherit.html#good" target="_blank">文创周边</a></li>
+                    </ul>
+                </li>
+                <li class="seach"><input type="search" size="60px"></li>
+                <li class="land"><a href="login.html"><span class="iconfont">&#xe6a3</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="x-wrap container">
+        <div class="bread-item1"><a href="shouye.html">首页</a></div>
+        <div class="jiantou"><img src="../images/箭头 右.png" alt=""></div>
+        <div class="bread-item2"><a href="/咨询.html">地域流派</a> </div>
+    </div>
+    <div class="foth" id="r">
+        <div class="title"><span class="iconfont" id="left">&#xe619</span>地域派系<span class="iconfont">&#xe61a</span>
+        </div>
+        <!-- <div class="fluid" id="fluid"><img src="../images/地域流派/bbg.png"></div> -->
+        <div class="region container">
+            <div class="out-left" id="out-left">
+                <p> 潍坊又称潍都,鸢都，制作风筝历史悠久，工艺精湛。用竹子扎制骨架，高档丝绢蒙面，手工绘画。工艺与美术的结合，体现了风筝的玩赏价值，随着国际风筝交流的逐渐频繁，风筝这一古老的民间艺术，在新形势下蓬勃发展，已经成为一种重要的艺术品。其种类有软翅类，硬翅类，龙头串式类板子类和立体桶子类等。它不仅被广泛用于放飞、比赛、娱乐，而且已经成为美化人们生活的时尚装饰品。风筝是潍坊的象征，每年的风筝节是潍坊以风筝拉动经济发展的一个活动。
+                </p>
+                <p> 潍坊风筝经过历史演变和横向传播，逐渐形成了选材讲究、造型优美、扎糊精巧、形象生动、绘画艳丽、起飞灵活的传统风格与艺术特色，和京式风筝、津式风筝等交相辉映，鼎足而立。</p>
+                <p> 潍坊风筝具有浓郁的地方生活气息和生动的气韵，扎制博采众家之长，特别在风筝的造型结构和绘画色彩上，把制作木版年画的工艺移植到风筝上，把国画的传统技法，运用到风筝的绘制上，形成了造型优美、扎工精细、色彩艳丽的独特风格，成为中国风筝的一个重要流派。
+                </p>
+                <p> 选材讲究、造型优美、扎糊精巧、形象生动、绘画艳丽、品种繁多、起飞灵活。在中国的风筝家族中，潍坊风筝历史悠久，题材丰富、广博。以其材料的奇特选用，设计的夸张变形，画工的年画技法，以及放飞的巧用力学原理，构成了浓郁的乡土气息和独特神韵，蜚声古今中外。
+                </p>
+            </div>
+            <div class="out-right">
+                <div class="right" id="c">
+                    <div class="san cur"></div>
+                    <div class="area area1" onclick="addCurClass(this)">潍坊<img src="../images/地域流派/拼合图形.png" alt=""></div>
+                </div>
+                <div class="right" id="c">
+                    <div class="san"></div>
+                    <div class="area" onclick="addCurClass(this)">天津<img src="../images/地域流派/拼合图形.png" alt=""></div>
+                </div>
+                <div class="right" id="c">
+                    <div class="san"></div>
+                    <div class="area" onclick="addCurClass(this)">北京<img src="../images/地域流派/拼合图形.png" alt=""></div>
+                </div>
+                <div class="right" id="c">
+                    <div class="san"></div>
+                    <div class="area" onclick="addCurClass(this)">南通<img src="../images/地域流派/拼合图形.png" alt=""></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        let word = document.getElementsByClassName('right');
+        let ar = [`<p> 潍坊又称潍都,鸢都，制作风筝历史悠久，工艺精湛。用竹子扎制骨架，高档丝绢蒙面，手工绘画。工艺与美术的结合，体现了风筝的玩赏价值，随着国际风筝交流的逐渐频繁，风筝这一古老的民间艺术，在新形势下蓬勃发展，已经成为一种重要的艺术品。其种类有软翅类，硬翅类，龙头串式类板子类和立体桶子类等。它不仅被广泛用于放飞、比赛、娱乐，而且已经成为美化人们生活的时尚装饰品。风筝是潍坊的象征，每年的风筝节是潍坊以风筝拉动经济发展的一个活动。
+                </p>
+                <p> 潍坊风筝经过历史演变和横向传播，逐渐形成了选材讲究、造型优美、扎糊精巧、形象生动、绘画艳丽、起飞灵活的传统风格与艺术特色，和京式风筝、津式风筝等交相辉映，鼎足而立。</p>
+                <p> 潍坊风筝具有浓郁的地方生活气息和生动的气韵，扎制博采众家之长，特别在风筝的造型结构和绘画色彩上，把制作木版年画的工艺移植到风筝上，把国画的传统技法，运用到风筝的绘制上，形成了造型优美、扎工精细、色彩艳丽的独特风格，成为中国风筝的一个重要流派。
+                </p>
+                <p> 选材讲究、造型优美、扎糊精巧、形象生动、绘画艳丽、品种繁多、起飞灵活。在中国的风筝家族中，潍坊风筝历史悠久，题材丰富、广博。以其材料的奇特选用，设计的夸张变形，画工的年画技法，以及放飞的巧用力学原理，构成了浓郁的乡土气息和独特神韵，蜚声古今中外。
+                </p>`,
+            ` <p> 清末民初年间，天津的风筝作坊和风筝艺人数不胜数，形成了百家争鸣的局面。 当时天津市面上出售的风筝画工普遍比较粗糙，骨架都是用纸捻来扎接，不能拆装折叠，存放十分不便。这时候，喜欢风筝的文人们借助于清末时期天津文化经济繁荣、手工业发达的有利条件，对民间风筝制作工艺进行了革新。
+                </p>
+                <p>天津风筝的制作，历史久远，工艺精湛，从清代的天津杨柳青年画《十美画放风筝》上即可得到证实，有串灯、盘鹰、唐僧取经、蝴蝶等10种风筝。对天津民筝制作技艺做出重大贡献，享誉中外的是著名风筝艺人魏元泰。一生从事风筝制作，苦心钻研，大胆创新，一生研制风筝200余种，被人称誉为"风筝魏"。</p>
+                <p>  天津风筝种类繁多，但以软翅为主。软翅风筝仅在翅膀上沿有骨架支撑，下面是软性的布或绢等材料，适合制作禽鸟或者昆虫，如鹰、蝴蝶、燕子、仙鹤、凤凰、蜻蜓等等。还可以很多小的软翅排列在一起，组成一个大风筝。例如用很多蝴蝶围绕着花丛而组成“百花齐放”，用很多鸟围绕着风凰组成“百鸟朝凤”等。
+                </p>
+                <p>   风筝魏经历了100多年的发展经久不衰，在魏元泰第二代传人魏慎行，第三代传人魏永昌、魏永珍，第四代传人魏国秋的继承和不断创新下，风筝魏的风筝已经达到了1000多个品种。在春秋两季的清晨和傍晚，特别是在节假日里，天津大大小小的广场、公园都可以看到许多风筝爱好者放风筝，多姿多彩、形态各异的风筝在天空中竞相飞舞。风筝带着天津人对未来的美好憧憬越飞越高。</p>`,
+            ` <p> 北京风筝一般指宫廷风筝，其中极具特色的是“沙燕”，又称“扎燕”和“京燕”，沙燕有肥燕、瘦燕、比翼燕、雄燕等之分，其本形式有硬翅、软翅、排子、长串和桶形五种，由于造型各异，呈现出的形态也各有不同。明、清以来,北京就是风筝的传统产地,以制作精巧而著称,制作一只风筝一般要经过十道工序。早些年,风筝是琉璃厂的特色之一,以传统风筝最具特色。
+                </p>
+                <p>“曹氏风筝”来源于《南鹞北鸢考工志》，此书成于大清乾隆二十年（1755年）前后，系统地记载了风筝起放原理、扎糊技法、绘画要领。因传此书为大文学家曹雪芹所作，所以人们将按此书中记载方法制作的风筝称之为“曹氏风筝”。后因其风筝做工精美、内涵深邃，受到民间乃至宫廷的喜爱。清代《南鹞北鸢考工志》等风筝著作为北京扎燕风筝提供了丰富的意象美学，融入了文学特征，深化了其内涵。费保龄在继承前人的基础上，于20世纪60年代研究、整理《南鹞北鸢考工志》，全面掌握了扎燕风筝制作技艺。</p>
+                <p>     北京扎燕风筝制作技艺每种都绘有骨架图、彩绘图，并配有扎糊诀和画诀，图文并茂，是具北京特色的风筝流派。其扎制的燕子作品图案化、拟人化，形神兼备，组成了充满个性与情感的扎燕风筝系列作品。
+曹氏风筝制作技艺具有选料精良、工艺细腻、色彩艳丽、造型优美等特点。作品样式新颖，种类繁多，表现内容有：历史典故、风物传说、民俗风情、仿真写实等题材，具有鲜明的古都文化特色。</p>`,
+            `<p> 南通风筝南通是中国四大风筝产地之一，南通风筝保存了古代“弦响碧空称风筝”的特点，以独特的音响效果著称，与北方的造型风筝分为南北两派。
+                </p>
+                <p> 南通风筝俗称“板鹞”，以平板六角或六角的变形“七连星”至“十九连星”居多，一般大小都在一米以上，最大的竖起有四、五米高，需卡车运载。风筝上缀满了大小不等的“哨”“口”，桶型的称“哨”，球型的称“口”，多者达数千。“哨”“口”的制作材料以葫芦和竹子为多也有用果壳、蛋壳、蚕茧和鹅毛管材料制成。音响“哨口”，是板鹞风筝的最大特色。“哨口”的雕刻工艺奥妙无穷，哨口的组合也有很大的学问。风筝上天后，哨口“得风则鸣，其声随风抑扬’有“空中交响乐”之美誉。鹞面上并绘有神话传说等民间绘画，下部系两根几十米长的尾绳，一只精致的板鹞，便是珍贵的民间工艺品，当地群众家中都有珍藏，代代相传。</p>
+                <p>   板鹞风筝的扎制工艺要求很高，装饰图案多为工笔重彩，内容有“八仙过海”“凤戏牡丹”“三国故事”等，喜用红、黑、青、紫色，以造成强烈的色彩对比，浓艳的筝面绘画也是南通板鹞风筝的重要特点。
+                </p>
+                <p>   南通纸鸢的发展历程中，不仅技艺不断传承和创新，更融入了南通地区的民俗文化和审美观念。从最初的简单造型到如今的复杂设计，从单一的功能到集观赏、娱乐、竞技于一体的多元化发展，南通纸鸢不断与时俱进，成为了南通文化的重要名片。`];
+        for (let i = 0; i < word.length; i++) {
+
+            let left = document.getElementById('out-left');
+            word[i].addEventListener('click', () => {
+                left.innerHTML = `${ar[i]}`;
+            })
+        }
+        function addCurClass(element) {
+    const allAreas = document.querySelectorAll('.area');
+    const allSans = document.querySelectorAll('.san');
+
+    // 移除所有area和san元素的cur和selected类名
+    allAreas.forEach(area => {
+        area.classList.remove('area1');
+    });
+    allSans.forEach(san => {
+        san.classList.remove('cur');
+    });
+
+    // 为点击的area元素添加selected类名
+    element.classList.add('area1');
+    const siblingSan = element.previousElementSibling;
+    // 为点击的area元素对应的san元素添加cur类名
+    siblingSan.classList.add('cur');
+}
+  
+    </script>
+    <div class="sect" id="sect">
+        <div class="title"><span class="iconfont" id="left">&#xe619</span>技艺派系<span class="iconfont">&#xe61a</span>
+        </div>
+        <div class="number">
+            <div class="a1">
+                <div class="up">
+                    <div class="img-box">
+                        <img src="../images/地域流派/01.png" alt="">
+                    </div>
+                    <div>传统民间派</div>
+                </div>
+                <div class="down">
+                    <p>民间风筝的制作者，多数是农民和手工艺人，一般说，在艺术上没有经过专门的训练。他们一般都是就地取材、蔑扎纸糊、不甚讲究，但风格粗犷、不矫揉造作，按照自
+                        己对生活的直观感受和审美习惯，无拘无束地表达理想和愿望，他们的风筝，无论是造型、用料、色彩的配置和制作风格，都带有浓厚的乡土气息。</p>
+                </div>
+            </div>
+            <div class="a2">
+                <div class="up">
+                    <div class="img-box"><img src="../images/地域流派/微信图片_20240519125537.png" alt="">
+                    </div>
+                    <div>传统艺匠派</div>
+                </div>
+                <div class="down">
+                    <p>由于出现了卖风筝的生意，专职风筝艺匠也就应运而生。在潍坊历史上，甚至有不少知名画家也参与风筝的绘制乃至设计制作，使潍坊风筝中出现了十分考究的精品。传统艺匠派对潍坊风筝事业的发展，起到了良好的促进作用，它使潍坊风筝从一般的玩具，上升为有价值的工艺品，成为潍坊地方文化的重要组成部分。
+                    </p>
+                </div>
+            </div>
+            <div class="a3">
+                <div class="up">
+                    <div class="img-box"><img src="../images/地域流派/1.png" alt="">
+                    </div>
+                    <div>现代创新派</div>
+                </div>
+                <div class="down">
+                    <p>到了现代，由于广大专业美术工作者、科技人员、工人、城镇居民踊跃参加风筝活动，充分发挥了现代工艺、现代科学技术的优势，在继承传统风筝的基础上，创造出了崭新的现代风筝。现代风筝的主要特点是重视新材料、新工艺的运用，造型简洁、明快、清新、巧妙，具有鲜明的时代性，受广大人民喜爱。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="x-footer">
+        <div class="end container">
+            <ul id="footer">
+                <li>网站地图</li>
+                <li>关于我们</li>
+                <li>联系我们</li>
+                <li>了解更多</li>
+            </ul>
+        </div>
+        <div class="map container">
+            <dl class="first">
+                <dt class="footer-nav"><a href="shouye.html">首页</a></dt>
+                <dd class="footer-droplist"><a href="shouye.html#about">关于纸鸢</a></dd>
+                <dd class="footer-droplist"><a href="shouye.htmla#meaning">纸鸢含义</a></dd>
+                <dd class="footer-droplist"><a href="shouye.html#zixun">纸鸢资讯</a></dd>
+            </dl>
+            <dl class="second">
+                <dt class="footer-nav"><a href="development.html">历史渊源</a></dt>
+                <dd class="footer-droplist"><a href="development.html#develop">发展历程</a></dd>
+                <dd class="footer-droplist"><a href="development.html#book">历史文献</a></dd>
+                <dd class="footer-droplist"><a href="development.html#legend">文化传说</a></dd>
+            </dl>
+            <dl class="second">
+                <dt class="footer-nav"><a href="region.html">地域流派</a></dt>
+                <dd class="footer-droplist"><a href="region.html#r">地域派系</a></dd>
+                <dd class="footer-droplist"><a href="region.html#sect">技艺派系</a></dd>
+            </dl>
+            <dl class="second">
+                <dt class="footer-nav"><a href="making.html">制作工艺</a></dt>
+                <dd class="footer-droplist"><a href="making.html#make">纸鸢制作</a></dd>
+                <dd class="footer-droplist"><a href="making.html#solt">纸鸢种类</a></dd>
+                <dd class="footer-droplist"><a href="making.html#attention">使用操作</a></dd>
+            </dl>
+            <dl class="second">
+                <dt class="footer-nav"><a href="inherit.html">文化传承</a></dt>
+                <dd class="footer-droplist"><a href="inherit.html#holiday">节日传承</a></dd>
+                <dd class="footer-droplist"><a href="inherit.html#person">传承名家</a></dd>
+                <dd class="footer-droplist"><a href="inherit.html#good">文创周边</a></dd>
+            </dl>
+        </div>
+        <div class="slot">
+            <div class="slot-track">
+                <div class="slot-item s1"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s2"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s3"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s4"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s5"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s6"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s7"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s8"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s9"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s10"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s11"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s12"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s13"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s14"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s15"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s16"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s17"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s18"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s19"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s20"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s21"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s1"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s2"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s3"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s4"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s5"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s6"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s7"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s8"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s9"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s10"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s11"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s12"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s13"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s14"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s15"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s16"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s17"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s18"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s19"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s20"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s21"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s1"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s2"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s3"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s4"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s5"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s6"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s7"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s8"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s9"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s10"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s11"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s12"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s13"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s14"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s15"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s16"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s17"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s18"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s19"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s20"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s21"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s1"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s2"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s3"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s4"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s5"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s6"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s7"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s8"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s9"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s10"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s11"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s12"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s13"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s14"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s15"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s16"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s17"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s18"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s19"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s20"></div>
+            </div>
+            <div class="slot-track">
+                <div class="slot-item s21"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const boxes = document.querySelectorAll(".slot-item");
+
+        document.addEventListener("mousemove", (e) => {
+            const mouseX = e.clientX;
+
+            // Reset all boxes height to 50px
+            boxes.forEach((box) => {
+                box.style.height = "70px";
+            });
+
+            // Adjust heights based on mouse position
+            boxes.forEach((box, index) => {
+                const boxRect = box.getBoundingClientRect();
+                const boxCenterX = boxRect.left + boxRect.width / 2;
+
+                if (Math.abs(mouseX - boxCenterX) < boxRect.width / 2) {
+                    box.style.height = "120px";
+                    for (let i = 0; i < 4; i++) {
+                        if (index > i + 1) {
+                            boxes[index - i - 1].style.height = 100 - i * 10 + "px";
+                        }
+                        if (index < boxes.length - (i + 1)) {
+                            boxes[index + i + 1].style.height = 100 - i * 10 + "px";
+                        }
+                    }
+                }
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>
