@@ -1,134 +1,153 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- 引入css文件 -->
-    <link rel="stylesheet" href="../css/login.css">
-    <link rel="icon" href="../images/logo.png">
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="icon" href="./images/logo.png" />
     <!-- 引入jquery -->
-    <script src="../js/jquery-latest.js"></script>
+    <script src="./js/jquery-latest.js"></script>
     <title>登录</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- 最外层的大盒子 -->
     <div class="box">
-        <!-- 滑动盒子 -->
-        <div class="pre-box">
-            <h1>WELCOME</h1>
-            <p>JOIN US!</p>
-            <div class="img-box">
-                <img src="../images/登录.png" alt="">
-            </div>
+      <!-- 滑动盒子 -->
+      <div class="pre-box">
+        <h1>WELCOME</h1>
+        <p>JOIN US!</p>
+        <div class="img-box">
+          <img src="./images/登录.png" alt="" />
         </div>
-        <div class="register-form">
-
-            <div class="title-box">
-                <h1>注册</h1>
-            </div>
-
-            <div class="input-box">
-                <input id="reg-username"  type="text" placeholder="用户名" maxlength="10px" autocomplete="on" required>
-                <input  id="reg-password" type="password" placeholder="密码">
-                <input id="confirm-password" type="password" placeholder="确认密码">
-            </div>
-
-            <div class="btn-box">
-                <button id="register-btn">注册</button>
-
-                <p onclick="mySwitch()">已有账号?去登录</p>
-            </div>
+      </div>
+      <div class="register-form">
+        <div class="title-box">
+          <h1>注册</h1>
         </div>
 
-        <div class="login-form">
-
-            <div class="title-box">
-                <h1>登录</h1>
-            </div>
-
-            <div class="input-box">
-                <input id="login-username"   type="text" placeholder="用户名" required maxlength="10px" autocomplete="on">
-                <input id="login-password"  type="password" placeholder="密码" required>
-            </div>
-
-            <div class="btn-box">
-                <button class="btn-login" id="login-btn">登录</button>
-
-                <p onclick="mySwitch()">没有账号?去注册</p>
-            </div>
+        <div class="input-box">
+          <input
+            id="reg-username"
+            type="text"
+            placeholder="用户名"
+            maxlength="10px"
+            autocomplete="on"
+            required
+          />
+          <input id="reg-password" type="password" placeholder="密码" />
+          <input id="confirm-password" type="password" placeholder="确认密码" />
         </div>
+
+        <div class="btn-box">
+          <button id="register-btn">注册</button>
+
+          <p onclick="mySwitch()">已有账号?去登录</p>
+        </div>
+      </div>
+
+      <div class="login-form">
+        <div class="title-box">
+          <h1>登录</h1>
+        </div>
+
+        <div class="input-box">
+          <input
+            id="login-username"
+            type="text"
+            placeholder="用户名"
+            required
+            maxlength="10px"
+            autocomplete="on"
+          />
+          <input
+            id="login-password"
+            type="password"
+            placeholder="密码"
+            required
+          />
+        </div>
+
+        <div class="btn-box">
+          <button class="btn-login" id="login-btn">登录</button>
+
+          <p onclick="mySwitch()">没有账号?去注册</p>
+        </div>
+      </div>
     </div>
     <script>
+      let flag = true;
+      const mySwitch = () => {
+        if (flag) {
+          $(".pre-box").css("transform", "translateX(100%)");
 
-        let flag = true
-        const mySwitch = () => {
-            if (flag) {
+          $(".pre-box").css("background-color", "#9E4242");
 
-                $(".pre-box").css("transform", "translateX(100%)")
-
-                $(".pre-box").css("background-color", "#9E4242")
-
-                $("img").attr("src", "../images/圆形 1.png")
-
-            }
-            else {
-                $(".pre-box").css("transform", "translateX(0%)")
-                $(".pre-box").css("background-color", "#EAE4D1")
-                $("img").attr("src", "../images/登录.png")
-            }
-            flag = !flag
+          $("img").attr("src", "./images/圆形 1.png");
+        } else {
+          $(".pre-box").css("transform", "translateX(0%)");
+          $(".pre-box").css("background-color", "#EAE4D1");
+          $("img").attr("src", "./images/登录.png");
         }
-        document.querySelector("#register-btn").addEventListener("click", function() {
-            let regUsername = document.getElementById("reg-username").value;
-            let regPassword = document.getElementById("reg-password").value;
-            let confirmPass = document.getElementById("confirm-password").value;
+        flag = !flag;
+      };
+      document
+        .querySelector("#register-btn")
+        .addEventListener("click", function () {
+          let regUsername = document.getElementById("reg-username").value;
+          let regPassword = document.getElementById("reg-password").value;
+          let confirmPass = document.getElementById("confirm-password").value;
 
-            if (regUsername && regPassword && confirmPass && regPassword === confirmPass) {
-                alert("注册成功");
-            } else {
-                alert("注册失败，请检查用户名和密码是否填写正确");
-            }
+          if (
+            regUsername &&
+            regPassword &&
+            confirmPass &&
+            regPassword === confirmPass
+          ) {
+            alert("注册成功");
+          } else {
+            alert("注册失败，请检查用户名和密码是否填写正确");
+          }
         });
 
-        document.querySelector("#login-btn").addEventListener("click", function() {
-            let loginUsername = document.getElementById("login-username").value;
-            let loginPassword = document.getElementById("login-password").value;
+      document
+        .querySelector("#login-btn")
+        .addEventListener("click", function () {
+          let loginUsername = document.getElementById("login-username").value;
+          let loginPassword = document.getElementById("login-password").value;
 
-            if (loginUsername && loginPassword) {
-                alert("登录成功");
-            } else {
-                alert("登录失败，请填写正确的用户名和密码");
-            }
+          if (loginUsername && loginPassword) {
+            alert("登录成功");
+          } else {
+            alert("登录失败，请填写正确的用户名和密码");
+          }
         });
     </script>
     <script>
-        const bubleCreate = () => {
+      const bubleCreate = () => {
+        const body = document.body;
 
-            const body = document.body
+        const buble = document.createElement("span");
 
-            const buble = document.createElement('span')
+        let r = Math.random() * 5 + 25;
 
-            let r = Math.random() * 5 + 25
+        buble.style.width = r + "px";
+        buble.style.height = r + "px";
 
-            buble.style.width = r + 'px'
-            buble.style.height = r + 'px'
+        buble.style.left = Math.random() * innerWidth + "px";
 
-            buble.style.left = Math.random() * innerWidth + 'px'
+        body.append(buble);
 
-            body.append(buble)
+        setTimeout(() => {
+          buble.remove();
+        }, 4000);
+      };
 
-            setTimeout(() => {
-                buble.remove()
-            }, 4000)
-        }
-
-        setInterval(() => {
-            bubleCreate()
-        }, 200);
+      setInterval(() => {
+        bubleCreate();
+      }, 200);
     </script>
-</body>
-
+  </body>
 </html>
